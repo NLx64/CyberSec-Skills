@@ -44,7 +44,7 @@ These skills follow the [Agent Skills open standard](https://agentskills.io), so
 
 | Skill | Category | Description | Status |
 |-------|----------|-------------|--------|
-| `pdf-triage-plus` | Document Analysis | Static triage for suspicious PDFs — catches what AV misses | ✅ Available |
+| `pdf-triage-plus` | Document Analysis | Static triage for suspicious PDFs — catches what AV misses | 🚧 In Development |
 
 *More skills coming soon...*
 
