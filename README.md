@@ -20,7 +20,7 @@
 
 *New skills and improvements are being added regularly*
 
-![Building](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1000&color=F7B93E&center=true&vCenter=true&width=435&lines=Building+detection+skills...;Adding+incident+response+workflows...;Documenting+malware+analysis+procedures...;Stay+tuned+for+updates!)
+![Building](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1000&color=F7B93E&center=true&vCenter=true&width=435&lines=Building+detection+skills...;Sharing+with+the+community...;Open+source+security+tools...;Stay+tuned+for+updates!)
 
 </div>
 
@@ -28,41 +28,15 @@
 
 ## 📖 About
 
-This repository contains a collection of **Agent Skills** designed for defensive security operations. Skills are versioned, reusable procedures that AI agents can execute to assist security analysts with common tasks.
+Hey! This repo is my way of giving back to the infosec community.
 
-Based on the [Agent Skills open standard](https://agentskills.io), these skills work across multiple platforms including **Claude Code**, **GitHub Copilot**, **Codex**, and other compatible AI agents.
+I've been building AI-powered skills to help security analysts automate repetitive tasks and focus on what really matters — finding threats and protecting systems. Everything here is **open source** and free to use.
 
-> 📝 Read the full article: [Agent Skills for Defensive Automation](https://nlx64.github.io/blog/agent-skills-defensive-automation/)
+The goal is simple: **share practical tools that actually help defenders**. No fluff, just stuff that works.
 
----
+These skills follow the [Agent Skills open standard](https://agentskills.io), so they work with **Claude Code**, **GitHub Copilot**, **Codex**, and other AI agents. Use them, fork them, improve them — that's what open source is about.
 
-## 🎯 Skill Categories
-
-<table>
-<tr>
-<td align="center" width="33%">
-
-### 🚨 Incident Response
-
-Skills for standardizing incident handling procedures
-
-</td>
-<td align="center" width="33%">
-
-### 🔬 Malware Analysis
-
-Automated analysis and threat reporting
-
-</td>
-<td align="center" width="33%">
-
-### 📄 Document Analysis
-
-Triage and analysis of suspicious files
-
-</td>
-</tr>
-</table>
+> 📝 Want to understand the "why" behind this? Check out my post: [Agent Skills for Defensive Automation](https://nlx64.github.io/blog/agent-skills-defensive-automation/)
 
 ---
 
@@ -70,9 +44,9 @@ Triage and analysis of suspicious files
 
 | Skill | Category | Description | Status |
 |-------|----------|-------------|--------|
-| `initial-incident-intake` | Incident Response | Standardizes first-hour incident response procedures | 🔜 Coming Soon |
-| `malware-analysis` | Malware Analysis | Produces analyst-grade threat reports with structured reasoning | 🔜 Coming Soon |
-| `pdf-triage-plus` | Document Analysis | Structural analysis of suspicious documents | 🔜 Coming Soon |
+| `pdf-triage-plus` | Document Analysis | Static triage for suspicious PDFs — catches what AV misses | ✅ Available |
+
+*More skills coming soon...*
 
 ---
 
@@ -91,23 +65,8 @@ cd CyberSec-Skills/skills
 ### Usage with Claude Code
 
 ```bash
-# Add to your Claude Code configuration
-claude config add skill ./skills/incident-response/initial-incident-intake
-```
-
-### Skill Structure
-
-```
-skills/
-├── incident-response/
-│   └── initial-incident-intake/
-│       └── SKILL.md
-├── malware-analysis/
-│   └── malware-analysis/
-│       └── SKILL.md
-└── document-analysis/
-    └── pdf-triage-plus/
-        └── SKILL.md
+# Add a skill to your configuration
+claude config add skill ./skills/document-analysis/pdf-triage-plus
 ```
 
 ---
@@ -134,10 +93,9 @@ Detailed instructions for the AI agent...
 
 ## ⚠️ Security Considerations
 
-When using AI agents for security operations, consider:
+When using AI agents for security operations, keep in mind:
 
 - **Prompt Injection**: Analyzed artifacts may contain malicious content
-- **Supply Chain**: Validate skill sources before use
 - **Hallucination**: Always verify agent outputs with human review
 - **Approval Gates**: Implement human-in-the-loop for critical actions
 
@@ -145,28 +103,26 @@ When using AI agents for security operations, consider:
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have skills to share:
+Got a skill that could help other defenders? PRs are welcome!
 
 1. Fork the repository
 2. Create your skill following the standard format
-3. Add documentation and examples
-4. Submit a Pull Request
+3. Submit a Pull Request
 
-See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for detailed guidelines.
+See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 
 ---
 
 ## 📚 Resources
 
 - [Agent Skills Standard](https://agentskills.io) - Official specification
-- [Blog Post](https://nlx64.github.io/blog/agent-skills-defensive-automation/) - Detailed explanation and use cases
-- [Claude Code Documentation](https://docs.anthropic.com/claude-code) - Platform integration
+- [Blog Post](https://nlx64.github.io/blog/agent-skills-defensive-automation/) - Why I'm building this
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License — use it however you want.
 
 ---
 
@@ -182,7 +138,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-*Building AI-powered tools for the security community*
+*Building tools for defenders, by a defender*
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0A66C2&height=80&section=footer"/>
 
